@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+/*-----------------Directory------------------*/
+/*
+
+1.1 - Variables
+
+2.1 - Page and Body setup    
+
+3.1 - Header & Footer
+ 3.2 - Header Links and Interaction
+
+4.1 - Body
+ 4.2 - Index Page (Home Page)
+ 4.3 - Menu Page (Food Menu)
+ 4.4 - About Page (Story)
+ 4.5 - Reservation Page
+ 4.6 - Contact Page
+
+5.1 - Page/Media screen setup
+
+*/
+/*-----------------Directory-----------------*/
+
+/* 1.1 Variables
+/**/
+:root{
+    --secondary-color:rgb(137, 115, 219);
+    --primary-color:rgb(32, 32, 32);
+    --primary-text-color:rgb(255, 255, 255);
+    --secondary-text-color:rgb(120, 111, 252);
+}
+/*-------------------------------------------------*/
+
+/* 2.1 Page and Body Setup
+/**/
+html, body {
+    margin:0;
+    padding:0;
+    max-width:100%;
+}
+body{
+    color:var(--primary-text-color);
+    background-color: var(--primary-color);
+    font-family: 'Joan', serif;
+    z-index:auto;
+}
+/*-------------------------------------------------*/
+
+/* 3.1 - Header & Footer
+/**/
+.pageNav{
+    background-color: var(--secondary-color);
+    width: 100%; 
+    padding-top:5px;
+    border-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.mainfooter{
+    display:inline-block;
+    width:100%;
+    margin:2em 0 0;
+    background-color:var(--secondary-color);
+}
+/*----------------------------------*/
+
+/* 3.2 - Header Links and Interaction
+/**/
+.pageNav li{
+    display: inline;
+    list-style-type: none;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:var(--secondary-color);
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-right:0.25em;
+    margin-left:0.25em;
+    font-size: 1.5em;
+}
+#navImage{
+    padding: 0px;
+}
+#image1{
+    max-width:75px;
+    max-height:75px;
+    background-color:inherit;
+}
+.pageNav a:link, .pageNav a:visited, .pageNav a:active{ 
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    color:var(--primary-text-color);
+}
+#headerImage{
+    width: 100%;
+}
+.headerText{
+    position:relative;
+    margin:87px 0 0 ;
+    width:550px;
+    color:var(--primary-text-color);
+    font-size:2em;
+    text-align:center;
+    font-family: 'Roboto Mono', monospace;
+    width:100%;
+}
+.headerText h1{
+    /*margin: 0 auto;*/
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bannerImage{
+    width:100%;
+}
+/*-------------------------------------------------*/
+
+/* 4.1 - Body
+/**/
+
+.flex-container, .flex-container-vertical{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    margin:0 auto;
+}
+.flexHorizTypeOne, .flexVertTypeOne, .flexHorizTypeForm{
+    background-color: rgba(139, 139, 139, 0.815);
+    width: 50%;
+    text-align:center;
+} 
+.flex-container-vertical{
+    flex-direction: column;
+    width: 95%;
+}
+.flexVertTypeOne{
+    width:100%;
+    padding: 3em 0 3em;
+}
+#paragraph{
+    padding:0 0 3em;
+}
+
+
+
+
+
+/*.socialTable{
+    margin:auto;
+    transform: translate(0, 50%);
+}
+.socialImage{
+    max-width:4em;
+    max-height:4em;
+    background-color:inherit;
+    margin:0 3em;
+}
+.socialImages{
+    display:inline-flex;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+}
+.socialLink:visited, .socialLink:active, .socialLink:hover, .socialLink:link{
+    text-decoration: none;
+    color:var(--secondary-text-color);
+}*/
+/*-------------------------------------*/
+
+/* 4.2 - Index Page (Home Page)
+/**/
+#openingStatment{
+    border:10px solid rgb(77, 60, 138);
+    border-width: 10px 0 0px;
+    width:100%;
+}
+#followingStatements{
+    border:10px solid rgb(77, 60, 138);
+    border-width: 0px 0 0px;
+    width:100%;
+}
+.horizFlexText{
+    padding:1em;
+}
+.vertFlexText{
+    padding: 0.5em 0;
+    width:90%;
+    margin:0 0 0 auto;
+    background-color: var(--secondary-color);
+    border:5px rgb(77, 60, 138) solid;
+    border-width: 5px 0 5px 5px;
+}
+.vertFlexTextTwo{
+    padding: 0.5em 0;
+    width:90%;
+    margin:0 auto 0 0;
+    background-color: var(--secondary-color);
+    border:5px rgb(77, 60, 138) solid;
+    border-width: 5px 5px 5px 0px;
+}
+.vertFlexParaStart, .vertFlexPara, .vertFlexParaTitle{
+    padding:0;
+    width:80%;
+    text-align:left;
+}
+.vertFlexPara{
+    font-size:1.25em;
+    margin:auto;
+}
+#aboutMePara, #aboutMeParaStart{
+    margin: 0 2em 1em auto;
+    width:60%;
+}
+#aboutMeParaStart{
+    color:rgb(216, 191, 255);
+    padding:5px;
+    width:60%;
+}
+#noColor{
+    background-color:rgba(255, 0, 0, 0);
+    padding:0;
+    margin-bottom: 2em;
+}
+#noPadding{
+    padding:0 0 1em;
+}
+#skills{
+    margin-bottom: 2em;
+}
+
+
+#subPara{
+    padding:1em;
+}
+#essayImage{
+    max-width:50%;
+    margin:auto;
+}
+.list{
+    text-align:left;
+    margin:0 auto 0 7em;
+}
+.list li{
+    padding: 4px 0;
+    font-size:1.1em;
+}
+
+
+
+
+.horizFlexImage{
+    display:block;
+    max-width:100%;
+}
+.vertFlexImage{
+    width:100%;
+}
+.horizFlexLink, .vertFlexLink{
+    display:block;
+    border: 1px solid rgb(144, 179, 255);
+    width:15em;
+    margin:auto;
+    margin-top:1em;
+    border-radius: 5px;
+}
+.horizFlexLink h2{
+    margin:0.5em initial;
+}
+.vertFlexLink{
+    width:50em;
+    padding: 0em;
+}
+.horizFlexLink:hover, .vertFlexLink:hover{ 
+    text-decoration: none;
+    background-color:rgb(144, 179, 255);
+    transition: 0.2s;
+}.horizFlexLink:link, .horizFlexLink:visited, .horizFlexLink:active, .vertFlexLink:link, .vertFlexLink:visited, .vertFlexLink:active{ 
+    text-decoration: none;
+    color:var(--secondary-text-color);
+}
+/*-------------------------------------*/
+
+/* 4.3 - Menu Page (Food Menu)
+/**/
+input[type=submit]{
+    text-decoration-line: underline;
+    background-color: #929090;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+input[type=submit]:hover{
+    background-color: #b6b6b6;
+    transition: 0.2s;
+}
+
+#menuForm{
+    margin:auto auto 0em;
+    padding: 0em 0em 3em 0;
+    background-color:rgb(37, 94, 141);
+    font-family: 'IM Fell French Canon', serif;
+    color:rgb(194, 194, 194);
+    border: rgb(141, 54, 54) solid 5px;
+}
+#menuSelect{
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+#vertMenu{
+    background-color:rgba(255, 255, 255, 0);
+}
+
+#menuDownload{
+    background-color: DodgerBlue;
+    width:40%;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#menuDownload:hover{
+    background-color: RoyalBlue;
+    transition: 0.2s;
+}
+/*-------------------------------------*/
+
+/* 4.4 - About Page (Story)
+/**/
+.borderText{
+    border:black 2px solid;
+}#aboutVertFlex{
+    padding-top:0;
+}#aboutTitle {
+    word-spacing: 10px;
+}#aboutPara{
+    margin:20px auto;
+    width:60%;
+    font-size:1.5em;
+    word-spacing: 10px;
+    letter-spacing: 0px;
+}
+/*-------------------------------------*/
+
+/* 4.5 - Reservation Page
+/**/
+#reservationForm{
+    width:90%;
+    margin:auto;
+}
+#submitText{
+    font-size:3em;
+}.infoText{
+    text-align:left;
+    width:50%;
+    margin: 4em auto;
+}.infoList{
+    width:60%;
+}.infoList li{
+    margin:10px 0;
+}
+
+#reserveFlexTwo{
+    border:black solid -3px;
+}
+#resForm{
+    width:70%;
+    margin:auto;
+    padding:20px 0;
+}.resForm fieldset{
+    border:none;
+}.personalDetails{
+    display:block;
+    background-color: rgba(0, 0, 0, 0);   
+}#formTitles{
+    font-size: 2em;
+}.flexHorizTypeForm{
+    margin:1em auto 20px;
+    background-color:rgba(0, 0, 0, 0);
+}.flexHorizTypeForm label{
+    text-align:center;
+    font-size: 1.25em;
+}.flexHorizTypeForm input, select{
+    width:80%;
+    font-size: 1em;
+    padding:10px;
+    border:none;
+    border-radius:4px
+}#largeFormField{
+    width: 100%;
+    margin:20px auto;
+}#smallFormFields{
+    width: 30%;
+    margin:20px auto;
+}textarea{
+    resize:none;
+}
+/*-------------------------------------*/
+
+/* 4.6 - Contact Page
+/**/
+#table{
+    margin:auto;
+}.contactTable th, .contactTable td{
+    padding:0 40px 1em 40px;
+}.contactTable th{
+    text-align:left;
+}.contactTable td{
+    text-align:right;
+}#contactBorder{
+    border: black solid 2px
+}
+/*-------------------------------------------------*/
+
+/* 5.1 - Page/Media
+/**/
+#page{ /*with the #page and @media, its checking the size of the window, and if its 40em, 64em etc, it will use the one that fits, its like an OR statement*/
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 40em) { 
+    #page{
+        max-width: 50em;
+    }.flexHorizTypeOne, .flexHorizTypeTwo{
+        width:100%;
+        gap:10px;
+    }#aboutTitle {
+        margin:20% 0 0;
+    }#menuForm{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 64em){
+    #page{
+        max-width: 75em;
+    }.flexHorizTypeOne, .flexHorizTypeTwo{
+        width:50%;
+        gap:0px;
+    }#aboutTitle {
+        margin:0% 0 0;
+    }#menuForm{
+        width: 60em;
+    }
+}

@@ -1,0 +1,183 @@
+
+
+
+<!DOCTYPE html>
+    <html lang='en'>
+
+        <head>
+            <meta charset="utf-8"/>
+            <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+
+            <title>La Confesseur</title>
+            <link rel="shortcut icon" href="images/favicon.jpg"/>
+        </head>
+
+        <header>
+            <nav class="pageNav">
+                <li id="navImage"><image id="image1" src="images/title.png" alt="placeholder"/></li>
+                <li><a href="index.html">about me</a></li>
+                <li><a href="my_work.html">my work</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="experiences.html">contact</a></li>
+            </nav>
+
+            <div class="headerText">
+                <image id="headerImage" src="images/banner.jpg"/>
+                <h1>patrick colbert: a portfolio</h1>
+            </div>
+        </header>
+
+
+
+
+
+
+        <body>
+            <div class="bodyContents">
+
+                <div id="reservationForm">
+                    <div class="flex-container-vertical">
+                        <div class="flexVertTypeOne">
+                            <h1 id="submitText">Submit a Reservation</h1>
+                        </div>
+                    </div>
+
+                <!--Horizontal Form Div-->
+                    <div class="flex-container" id="formPage">
+                <!--Form info-->
+                        <div class="flexHorizTypeOne" id="reserveFlexOne">
+                            <div class="infoText">
+                                <h1>Reservation Submission</h1>
+                                <p>The following information is required for making a booking. If any of 
+                                    the following information has not been filled out, we will respond 
+                                    via email requesting left out information.</p>
+                                
+                                <div class="infoList">
+                                    <h4>Required Information</h4>
+                                    <ul>
+                                        <li>First and/or Last Name</li>
+                                        <li>Phone Number</li>
+                                        <li>No. of People</li>
+                                        <li>Date & time of Reservation</li>
+                                    </ul>
+                                </div>
+
+                                <p>Reservations can be booked within the next <B>six</B> months in advance.</p>
+                                <p>On the <B>first</B> of each month, the next month will be available 
+                                    for booking.</p>
+                                <p>If <B>more than six people</B> will be attending, we will contact the provided 
+                                    phone number to query the amount of people that will be attending</p>
+                            </div>
+                        </div>
+                <!--End of Form Info-->
+
+
+
+    <!--Form To Complete Reservation-->
+                        <div class="flexHorizTypeOne" id="reserveFlexTwo">
+                            <form action="reservation.php" method="post" class="resForm" id="resForm">
+                                <fieldset class="personalDetails">
+                                    <legend id="formTitles">Personal Details</legend>
+                                        <div class="flex-container">
+                                            <div class="flexHorizTypeForm">
+                                                <label for="fName" id="fNameLabel">First Name</label><br>
+                                                <input type="text" name="fName" id="fName" placeholder="John"/>
+                                            </div>
+                                        
+                                            <div class="flexHorizTypeForm">
+                                                <label for="lName" id="lNameLabel">Last Name</label><br>
+                                                <input type="text" name="lName" id="lName" placeholder="Doe"/>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex-container">
+                                            <div class="flexHorizTypeForm" id="largeFormField">
+                                                <label for="pNumber" id="pNumberLabel">Phone Number</label>
+                                                <input type="tel" name="pNumber" id="pNumber" placeholder="0412 345 678"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-container">
+                                            <div class="flexHorizTypeForm" id="largeFormField">
+                                                <label for="eMail" id="eMailLabel">Email</label> <br>
+                                                <input type="text" name="eMail" id="eMail" placeholder="username@domain.name"/>
+                                            </div>
+                                        </div>
+
+                                </fieldset>
+
+                                <fieldset id="reservationInfo">
+                                    <legend id="formTitles">Reservation Information</legend>
+                                        <div class="flex-container">
+                                            <div class="flexHorizTypeForm">
+                                                <label for="amountOfPeople" id="amountOfPeopleLabel">Amount of People</label>
+                                                <select name="amountOfPeople" id="amountOfPeople">
+                                                    <option value="1"><p>1</p></option>
+                                                    <option value="2"><p>2</p></option>
+                                                    <option value="3"><p>3</p></option>
+                                                    <option value="4"><p>4</p></option>
+                                                    <option value="5"><p>5</p></option>
+                                                    <option value="6+"><p>6+</p></option>
+                                                </select>
+                                            </div>
+
+                                            <div class="flexHorizTypeForm">
+                                                <label for="dateOfRes" id="dateOfResLabel">Reservation Date</label>
+                                                <input type="date" id="dateOfRes" name="dateOfRes"
+                                                    value="2022-06-01"
+                                                    min="2022-06-01" max="2022-12-31">
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-container">
+                                            <div class="flexHorizTypeForm" id="largeFormField">
+                                                <label for="message" id="messageLabel">Extra Notes</label> <br>
+                                                <textarea name="message" rows="4" cols="56" placeholder="Ex. I have a nut allergy"></textarea>
+                                            </div>
+                                        </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <input type="submit">
+                                </fieldset>
+                            </form>
+                        </div>
+    <!-- End ofForm To Complete Reservation-->
+
+                    </div>
+    <!-- End of Horizontal Form Div-->
+
+                </div>
+                
+<!--Social Media Links-->
+                <table class="socialTable">
+                    <thead>
+                        <tr>
+                            <th><a class="socialLink" href="https://www.facebook.com/"><h1>FaceBook</h1></a></th>
+                            <th><a class="socialLink" href="https://www.instagram.com/"><h1>Instagram</h1></a></th>
+                            <th><a class="socialLink" href="https://www.twitter.com/"><h1>Twitter</h1></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3"><a class="socialLink" href="https://www.facebook.com/"><image class="socialImage" src="images/fb_social.png"/></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"><a class="socialLink" href="https://www.instagram.com/"><image class="socialImage" src="images/instagram_social.png"/></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"><a class="socialLink" href="https://www.twitter.com/"><image class="socialImage" src="images/twitter_social.png"/></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+<!--End of Social Media Links-->
+            </div>
+
+            <!--Footer-->
+            <div class="mainfooter">
+                <footer>
+                        <p>© 2021 – Patrick Colbert</p>
+                </footer>
+            </div>
+        </body>
+    </html>
